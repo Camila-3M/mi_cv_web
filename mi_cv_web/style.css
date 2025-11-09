@@ -1,0 +1,135 @@
+:root {
+  --color-primario: #c9a552;
+  --color-secundario: #ebe8db;
+  --color-terciario: #e9c392;
+  --color-texto: #333;
+  --color-fondo: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+.encabezado-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--color-primario);
+  color: var(--color-fondo);
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-fondo);
+}
+
+.menu-navegacion {
+  background-color: var(--color-terciario);
+  text-align: center;
+  padding: 0.8rem 0;
+}
+
+.menu-navegacion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.menu-navegacion a {
+  color: var(--color-fondo);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu-navegacion a:hover {
+  color: var(--color-texto);
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  background: var(--color-secundario);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+h3 {
+  color: var(--color-primario);
+}
+
+.lista-habilidades li {
+  padding: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.lista-habilidades li:hover {
+  background-color: var(--color-primario);
+  color: var(--color-fondo);
+}
+
+/* Flex layout */
+.contenedor-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--color-primario);
+  color: var(--color-fondo);
+}
+
+.enlace-externo {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+button {
+  background: var(--color-fondo);
+  color: var(--color-primario);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--color-secundario);
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .contenedor-habilidades {
+    flex-direction: column;
+  }
+}
+
+.oculto {
+  display: none;
+}
